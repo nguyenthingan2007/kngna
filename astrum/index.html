@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#05030f" />
+<meta name="description" content="ASTRUM - Trang chủ hoành tráng với tiêu đề lớn, đoạn giới thiệu ngắn và hiệu ứng lấp lánh thuần HTML/CSS/JavaScript." />
+<title>ASTRUM · Nơi Ý Tưởng Hóa Thành Ánh Sáng</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z' fill='%23ffd98a'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ===== Nền: các lớp hiệu ứng ===== -->
+  <div class="bg" aria-hidden="true">
+    <div class="aurora">
+      <span class="blob blob--violet"></span>
+      <span class="blob blob--pink"></span>
+      <span class="blob blob--cyan"></span>
+      <span class="blob blob--gold"></span>
+    </div>
+    <div class="grid-lines"></div>
+    <canvas id="stars" class="stars"></canvas>
+    <div class="spotlight"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+  </div>
+
+  <!-- ===== Thanh điều hướng ===== -->
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top">
+      <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z"/></svg>
+      <span class="brand__text">ASTRUM</span>
+    </a>
+    <nav class="nav" aria-label="Điều hướng chính">
+      <a href="#top">Trang chủ</a>
+      <a href="#ly-do">Điểm nổi bật</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+    <a class="btn btn--mini" href="#ly-do">Khám phá<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </header>
+
+  <main id="top">
+    <!-- ===== HERO: tiêu đề + đoạn giới thiệu ===== -->
+    <section class="hero">
+      <div class="hero__inner">
+
+        <p class="badge" data-reveal>
+          <span class="badge__dot"></span>
+          Thiên hà ý tưởng · Phiên bản 1.0
+        </p>
+
+        <h1 class="title">
+          <span class="title__line">Nơi Ý Tưởng</span>
+          <span class="title__line title__line--gold" data-shine="Hóa Thành Ánh Sáng">Hóa Thành Ánh Sáng</span>
+        </h1>
+
+        <!-- những vì sao trang trí quanh tiêu đề -->
+        <div class="deco" aria-hidden="true">
+          <svg class="spark spark--1" viewBox="0 0 24 24"><path d="M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z"/></svg>
+          <svg class="spark spark--2" viewBox="0 0 24 24"><path d="M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z"/></svg>
+          <svg class="spark spark--3" viewBox="0 0 24 24"><path d="M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z"/></svg>
+          <svg class="spark spark--4" viewBox="0 0 24 24"><path d="M12 0c1.2 7 4 9.8 12 12-8 2.2-10.8 5-12 12C10.8 17 8 14.2 0 12 8 9.8 10.8 7 12 0Z"/></svg>
+          <span class="ring ring--1"></span>
+          <span class="ring ring--2"></span>
+        </div>
+
+        <p class="lede" data-reveal style="--rd:.35s">
+          ASTRUM là khoảng trời riêng nơi những dòng code biết <em>phát sáng</em> —
+          giao diện được đánh bóng từng chi tiết, chuyển động mượt như pha lê,
+          và hiệu ứng lấp lánh phủ lên mọi thứ bạn chạm vào.
+          Không rườm rà, chỉ còn lại <strong>vẻ đẹp khiến người ta muốn nán lại lâu hơn</strong>.
+        </p>
+
+        <div class="cta" data-reveal style="--rd:.5s">
+          <a class="btn btn--primary" href="#ly-do">
+            <span>Cảm nhận ánh sáng</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#ly-do">
+            <span>Xem điểm nổi bật</span>
+          </a>
+        </div>
+
+        <ul class="stats" data-reveal style="--rd:.65s">
+          <li class="stat"><b data-count="0">0</b><span>Thư viện nặng</span></li>
+          <li class="stat"><b data-count="60">0</b><span>Khung hình / giây</span></li>
+          <li class="stat"><b data-count="100" data-suffix="%">0</b><span>Thuần Vanilla</span></li>
+        </ul>
+      </div>
+
+      <a class="scroll-cue" href="#ly-do" aria-label="Cuộn xuống">
+        <span class="scroll-cue__mouse"><span class="scroll-cue__dot"></span></span>
+        <span class="scroll-cue__text">Cuộn để tỏa sáng</span>
+      </a>
+    </section>
+
+    <!-- ===== 3 điểm nổi bật ===== -->
+    <section class="why" id="ly-do">
+      <h2 class="section-title" data-reveal>Điều gì làm nên <span>độ lấp lánh</span></h2>
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="card__num">01</span>
+          <h3>Nền trời động</h3>
+          <p>Hàng trăm vì sao nhấp nháy trên canvas, tự thích ứng mọi độ phân giải và tự nghỉ khi bạn rời khỏi tab.</p>
+        </article>
+        <article class="card" data-reveal style="--rd:.12s">
+          <span class="card__num">02</span>
+          <h3>Rẻo theo con trỏ</h3>
+          <p>Vệt bụi sao bám theo chuột, bùng nổ thành chùm tia sáng mỗi khi bạn nhấn chuột hoặc chạm màn hình.</p>
+        </article>
+        <article class="card" data-reveal style="--rd:.24s">
+          <span class="card__num">03</span>
+          <h3>Không một thư viện</h3>
+          <p>Chỉ HTML, CSS và JavaScript. Không build, không cài đặt — mở file là trang web bừng sáng ngay lập tức.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="lien-he">
+    <p>Dựng bằng <span class="heart">♥</span> và ánh sáng · ASTRUM 2026</p>
+    <a class="footer__link" href="#top">Về đầu trang ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
